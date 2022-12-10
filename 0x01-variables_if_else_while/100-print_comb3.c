@@ -23,13 +23,23 @@ int main(void)
 
 	while (d < 10)
 	{
-		if (d != C && d < C)
+		if (d != c && d < c)
 		{
 			putchar('0' + d);
-			putchar('0' = c);
+			putchar('0' + c);
 
 			if (c + d != 17)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(41);
+				putchar(44);
+			}
+		}
+
+		c++;
+	}
+	d++;
+}
+putchar('\n');
+return (0);
+}
 
