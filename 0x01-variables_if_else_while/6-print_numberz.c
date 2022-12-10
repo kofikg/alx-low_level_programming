@@ -3,7 +3,7 @@
  * main - main block
  * Description: prints all single digit number of base 10
  * starting from 0, followed by new line.
- * Return: always 0 (success)
+ * Return: 0
  */
 int main(void)
 {
@@ -18,4 +18,4 @@ int main(void)
 
 	putchar('\n');
 	return (0);
-i}
+}
