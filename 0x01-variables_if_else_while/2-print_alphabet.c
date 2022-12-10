@@ -5,6 +5,7 @@
  * Description: Get a random with 5
  * Return: 0
  */
+
 int main(void)
 {
 	char c = 'a';
@@ -13,6 +14,6 @@ int main(void)
 		putchar(c);
 		c++;
 	}
-	putchar( '\n' );
+	putchar('\n');
 	return (0);
 }
