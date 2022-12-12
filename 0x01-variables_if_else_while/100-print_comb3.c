@@ -21,8 +21,11 @@ int main(void)
 	int c;
 	int d = 0;
 
-	while i(d < 10)
+	while (d < 10)
 	{
+		c = 0;
+		while (c < 10)
+
 		if (d != c && d < c)
 		{
 			putchar('0' + d);
@@ -30,8 +33,8 @@ int main(void)
 
 			if (c + d != 17)
 			{
-				putchar(41);
-				putchar(44);
+				putchar(',');
+				putchar(' 'i);
 			}
 		}
 
