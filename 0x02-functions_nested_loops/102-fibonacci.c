@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - main block
  * Description: computes and prints the sum of all the multiples of 3 or
@@ -23,7 +24,6 @@ int main(void)
 		}
 		i++;
 	}
-	
 	putchar('\n');
 	return (0);
 }
