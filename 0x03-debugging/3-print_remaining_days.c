@@ -9,7 +9,7 @@
  * @day: days of the month
  * Return: void
  */
-void print_remaining_days(int month, int day, int year)
+void print_remaining_days(int month, int day, int year);
 {
 if ((year % 4 == 0) && (year % 400 == 0 || year
 % 100 != 0))
@@ -31,6 +31,5 @@ else
 {
 printf("day of the year: %d\n", day);
 printf("remaining days %d\n", 365 - day);
-}
-}
+return(0);
 }
