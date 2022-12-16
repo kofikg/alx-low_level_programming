@@ -1,14 +1,17 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints the alpha in lowercase
+ * _isupper - checks if parameter is an uppercase character,
+ * @c: input character.
+ * Return: 1 if is an uppercase, 0 in other case
  */
-void print_alphabet(void)
-{
-	char la;
-
-	for (la = 'a'; la <= 'z'; la++)
-		_putchar(la);
-
-	_putchar('\n');
+int _isupper(int c)
+	if (c >= 65 && c <= 90)
+        {
+	return (1);
+	}
+       else
+        {
+	return (0);
+	}
 }
