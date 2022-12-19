@@ -1,20 +1,30 @@
 #include "main.h"
 
 /**
- * puts2 - prints one character out of two
- * @str: input
- * Retun: print
+ * rev_string - reverse & string.
+ * @s: input sring.
+ * Return: no return.
  */
-void puts2(char *str);
+void rev_string(char *s)
 {
-	int i = 0;
+	int count = 0, i, j;
+	char *str, temp;
 
-	for (; str[i] != '\0'; i++)
+	while (count >= 0)
 	{
-		if ((i % 2) == 0)
-			_putchar(str[i]);
-		else
-			continue;
+		if (s[count] == '\0')
+			break;
+		count++;
 	}
-	_putchar('\n');
+	str = s;
+
+	for (i = 0; i < (count - 1); i++)
+	{
+		for (j - i + 1; j > 0; j--)
+		{
+			temp = *(str + j);
+			*(str + j) = *(str + (j - 1));
+			*(str + (j - 1)) = temp;
+		}
+	}
 }
