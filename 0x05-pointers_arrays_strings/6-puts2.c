@@ -1,20 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * puts2 - prints one char out of two
- * @str: input 
- * Return: print.
+ * print_array - unction that prints n elements of an array of interges
+ *
+ * @a: pointer to first int
+ * @n: pointer to second int
+ * Return: nothing
  */
-void puts2(char *str)
-{
-	int j = 0;
 
-	for (; str[i] != '\0'; i++)
+void print_array(int *a, int n)
+{
+	int i = 0;
+
+	for (i = 0; i < n; i++)
 	{
-		if ((i % 2) == 0)
-			_putchar(str[i]);
-		else
-			continue;
+		printf("%d", a[i]);
+		if (i < n - 1)
+			printf(", ");
 	}
-	_putchar('\n');
+	printf("\n");
 }
+
