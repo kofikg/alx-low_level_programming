@@ -1,23 +1,30 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_array - unction that prints n elements of an array of interges
- *
- * @a: pointer to first int
- * @n: pointer to second int
- * Return: nothing
- */
-
-void print_array(int *a, int n)
+ *puts - prints every other character of a string, starting with the \
+ first character, followed by new line.
+* @str: string to be printed
+*
+* Return: nothing on success
+*/
+void puts2(char *str)
 {
-	int i = 0;
+	int count = 0, i;
 
-	for (i = 0; i < n; i++)
+	while (*str)
 	{
-		printf("%d", a[i]);
-		if (i < n - 1)
-			printf(", ");
+		count++;
+		str++;
 	}
-	printf("\n");
-}
 
+	for (i = 0; i < count; i++)
+		str--;
+
+	for (i = 0; i < count; i++)
+	{
+		if (i % 2 == 0)
+			_putchar(str[i]);
+	}
+
+	_putchar('\n');
+}
