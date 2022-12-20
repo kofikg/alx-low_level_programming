@@ -4,9 +4,8 @@
 /**
  * main - generates random valid passwords
  * return: 0 (0n success).
- *
  */
-int main(void);
+int main(void)
 {
 	int pass, sum;
 
@@ -16,7 +15,7 @@ int main(void);
 	{
 		pass = (rand() % 128);
 		sum += pass;
-		printf("%c", pass);
+		printf("%c");
 	}
 	printf("%c", 2772 - sum);
 
