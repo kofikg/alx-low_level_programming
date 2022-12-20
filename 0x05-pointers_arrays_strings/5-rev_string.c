@@ -1,30 +1,31 @@
 #include "main.h"
 
 /**
- * rev_string - reverse & string.
- * @s: input sring.
- * Return: no return.
+ * rev_string -reverse a string
+ * @s: string to be reverse
+ *
+ * Return: nothing on success
  */
 void rev_string(char *s)
 {
-	int count = 0, i, j;
-	char *str, temp;
+	int count = 0, i = 0;
+	char last_char;
 
-	while (count >= 0)
+	while (*s)
 	{
-		if (s[count] == '\0')
-			break;
+		s++;
 		count++;
 	}
-	str = s;
 
-	for (i = 0; i < (count - 1); i++)
+	for (i = 0; i < count; i++)
+		s--;
+
+	for (i = 0; i < (count / 2); i++)
 	{
-		for (j - i + 1; j > 0; j--)
-		{
-			temp = *(str + j);
-			*(str + j) = *(str + (j - 1));
-			*(str + (j - 1)) = temp;
-		}
+		int last = count - 1;
+
+		last_char = s[last - i];
+		s[last - i] = s[i];
+		s[i] = last_char;
 	}
 }
