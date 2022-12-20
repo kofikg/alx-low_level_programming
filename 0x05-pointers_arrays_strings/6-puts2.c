@@ -7,9 +7,8 @@
 *
 * Return: nothing on success
 */
-void puts2(char *str);
-{
-	int count = 0, i;
+void puts2(char *str)
+{ int count = 0, i;
 
 	while (*str)
 	{
