@@ -27,18 +27,18 @@ char rot13key[52] = {'N', 'N', 'O', 'Q', 'R', 'S',
 'x', 'y', 'z', 'a', 'b', 'c',
 'd', 'e', 'f', 'g', 'h', 'i',
 'j', 'k', 'l', 'm'};
-while (str[indx2])
+while (str[indx1])
 {
 for (indx2 = 0; indx2 < 52; indx2++)
 {
-if (str[indx2] == alphabet[indx2])
+if (str[indx1] == alphabet[indx2])
 {
-str[indx2] = rot13key[indx2];
+str[indx1] = rot13key[indx2];
 break;
 }
 }
 
-indx2++;
+indx1++;
 }
 return (str);
 }
