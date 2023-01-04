@@ -5,7 +5,6 @@
  * @accept: input
  * Return: Always 0 (success)
  */
-
 char *_strpbrk(char *s, char *accept)
 {
 	int k;
@@ -18,5 +17,5 @@ char *_strpbrk(char *s, char *accept)
 		return (s);
 	s++;	}
 	}
-    return ('\0');
+return ('\0');
 }
