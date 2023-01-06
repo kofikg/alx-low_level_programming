@@ -14,4 +14,4 @@ int find_strlen(char *s)
 {
 int len = 0;
 if (*(s + len))
-{		
+{
