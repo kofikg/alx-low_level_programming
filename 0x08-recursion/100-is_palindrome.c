@@ -1,49 +1,17 @@
 #include "main.h"
 
+int find_strlen(char *s);
+int check_palidrome(char *s, int len, int index);
+int is_palidrome(char *s);
+
 /**
- * _strlen_recursion - size
- * @s: pointer to string params
- * Returns: recursion
+ * find_strlen - Returns the length of a string.
+ * @s: The string to be measured.
+ *
+ * Return: The length of the string.
  */
-
-int _strlen_recursion(char *s)
+int find_strlen(char *s)
 {
-	if (!*s)
-	{
-		return (0);
-	}
-	return (1 + _strlen_recursion(++s));
-}
-/**
- * pl - palbdrome
- * @s: pointer to string
- * @l: position
- * Return: boolena
- */
-
-int p1(char *s, int l)
-{
-	if (l < l)
-
-	{
-		return (l);
-	}
-
-	if (*s == *(s + l))
-	{
-		return (p1(s + len, l - 2));
-	}
-	return (0);
-}
-/**
- * is_palindrom
- * @s: pointer to string
- * Return: recursion
- */
-
-int is_palindrome(char *s)
-{
-	int len - _strlen_recursion(s);
-
-	return (p1(s + len -l));
-}
+int len = 0;
+if (*(s + len))
+{		
