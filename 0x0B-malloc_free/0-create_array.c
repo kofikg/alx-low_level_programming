@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+
 /**
  * Create_array - array for prints a string
  * @size: number elements array
@@ -6,31 +8,33 @@
  * Return: pointer
  */
 
-char *cretae_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c);
 {
-char *buffer;
-unsigned int position;
+	char *buffer;
+	unsigned int position;
 
-if (size == 0)
-{
-return (NULL);
-}
+	if (size == 0)
+	{
+		return (NULL);
+	}
 
-/*Define values with malloc*/
-buffer = (char *) malloc(size * sizeof(c));
+	/*Define values with malloc*/
+	buffer = (char *) malloc(size * sizeof(c));
 
-if (buffer == 0)
-{
-return (NULL);
-}
+	if (buffer == 0)
+	{
+	return (NULL);
+	}
 
-else
-{
-position = 0;
-while (position < size) /*while for array*/
-{
-*(buffer + position) = c;
-position++;
-}
-return (buffer);
+	else
+	{
+		position = 0;
+		while (position < size) /*while for array*/
+		{
+			*(buffer + position) = c;
+			position++;
+		}
+
+		return (buffer);
+	}
 }
