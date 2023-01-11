@@ -6,7 +6,7 @@
  * Return: pointer
  */
 
-char *cretae_array(unsigned int size, char c)
+char *cretae_array(unsigned int size, char c);
 {
 char *buffer;
 unsigned int position;
