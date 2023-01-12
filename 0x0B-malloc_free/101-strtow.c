@@ -9,6 +9,7 @@
 int wordnos(char *s)
 {
 	int flag, c, w;
+
 	flag = 0;
 	w = 0;
 
@@ -60,16 +61,12 @@ char **strtow(char *str)
 					*tmp++ = str[start++];
 				*tmp = '\0';
 				matrix[k] = tmp - c;
-				K++;
-				c = 0;
-
-			}
-	      }
-	     else if (c++; == 0)
-		     start = i;
-          }
- 
-          matrix[k] = NULL;
-
-	  return (matrix);
+k++;
+c = 0;
+}
+else if (c++ == 0)
+	start = i;
+}
+matrix[k] = NULL;
+return (matrix);
 }
