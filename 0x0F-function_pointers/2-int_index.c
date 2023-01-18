@@ -8,9 +8,8 @@
  *
  * Return: index of the fist element for which
  * the cmp function does not return 0, or -1 if no match is found
- * or size id negative
+ * or size is negative
  */
-
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
