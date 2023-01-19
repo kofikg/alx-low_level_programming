@@ -1,4 +1,4 @@
-#include "3-calc"
+#include "3-calc.h"
 
 /**
  * main - program that performs simple operations
@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
 	int arg1, arg2, result;
 	char o;
@@ -22,7 +22,7 @@ int main(int argc, char * argv[])
 	arg1 = atoi(argv[1]);
 	arg2 = atoi(argv[3]);
 
-	func = get_opfunc(argv[2]);
+	func = get_op_func(argv[2]);
 
 	if (!func)
 	{
