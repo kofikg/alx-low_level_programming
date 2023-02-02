@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * binary_to_unit - converts a binary number to unsigned int
  * @b: string containing the binary number
@@ -19,6 +18,5 @@ unsigned int binary_to_unit(const char *b)
 			return (0);
 		dec_val = 2 * dec_val + (b[i] - '0');
 	}
-
 	return (dec_val);
 }
