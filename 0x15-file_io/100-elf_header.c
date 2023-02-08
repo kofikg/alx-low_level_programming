@@ -1,9 +1,9 @@
 #include <elf.h>
-#include <sys/types.h>                                                                                                                          
-#include <sys/stat.h>                                                                                                                           
-#include <fcntl.h>                                                                                                                              
-#include <unistd.h>                                                                                                                             
-#include <stdio.h>                                                                                                                              
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h>
 #define REV(n) ((n << 24) | (((n >> 16) << 24) >> 16) | \
 (((n << 16) >> 24) << 16) | (n >> 24))
