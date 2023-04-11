@@ -16,5 +16,3 @@ unsigned long int hash_djb2(const unsigned char *str)
 	}
 	return (hash);
 }
-Footer
-© 2023 GitHub, Inc.
